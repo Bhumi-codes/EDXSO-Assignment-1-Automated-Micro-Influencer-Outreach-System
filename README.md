@@ -360,7 +360,7 @@ Important details:
 - **Uncertain results:** An unfinished or uncertain send remains blocked from automatic retry to avoid duplicate emails.
 - **`SENT` status:** Means Gmail accepted the email and returned a message ID. It does not confirm inbox delivery or that the email was opened.
 
-  ![Image description](assets/gmail_ss.jpg)
+  ![Email_screenshot](assets/gmail_ss.jpg)
 
 ## Important observed results
 
