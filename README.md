@@ -27,27 +27,23 @@ The demo messages use the signature **Alex, Partnerships Coordinator at CodeStar
 
 ### Local environment
 
-- Python 3.11 or 3.12. The final consolidated project's 20 offline check groups passed in the user's Python 3.11.15 environment; clean installation and offline checks were also verified on Python 3.12.14 on Windows. Other interpreter/platform combinations have not been verified.
-- Git for cloning/version control. `uv` is used in the commands below; a standard `venv`/pip alternative is included.
-- Internet access and authorized provider accounts for live stages. Offline self-checks do not require API keys.
-- Optional Chrome and a compatible Selenium driver for public-website rendering. Browser/driver provisioning depends on the local installation; Selenium is not required for the normal HTTP-only enrichment path.
+## Setup and requirements
 
-Install the pinned dependencies from `requirements.txt`:
+Use Python 3.11 or 3.12. Run these commands from the project folder to create a virtual environment and install the required libraries:
 
 ```powershell
-# Run from the project root.
 uv venv .venv
 uv pip install --python .\.venv\Scripts\python.exe -r requirements.txt
 ```
 
-Alternative using the Python launcher:
+If you do not use `uv`, run:
 
 ```powershell
 py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
-No environment activation is needed when using the explicit interpreter path. Direct dependencies are HTTPX, Pydantic, Beautiful Soup, Selenium, python-dotenv, google-api-python-client, google-auth with its Requests transport extra, and google-auth-oauthlib. SQLite, CSV, JSON, hashing and the CLI use Python's standard library. Groq and Gemini are accessed through REST; their SDKs are not required.
+You do not need to activate the virtual environment because the commands use its Python interpreter directly.
 
 ### API keys and local configuration
 
