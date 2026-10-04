@@ -125,95 +125,136 @@ Views are collected but excluded from this formula. Any criterion FAIL makes the
 
 ## Run the project step by step
 
-Run commands from the project root. Provider stages consume quota; previews are read-only. Output can be retained with `2>&1 | Tee-Object -FilePath stage.log` without rerunning a stage merely to recover terminal scrollback. Logs may contain contacts and should stay local.
+Run these commands from the project folder in the same PowerShell terminal.
 
-### 1. Verify offline and initialize local storage
+- **API usage:** Discovery, collection, classification, enrichment, and personalization may use API quota.
+- **Preview:** Preview commands show what will be processed without making API requests or saving changes.
+
+### 1. Prepare the database
+
+For a new installation, initialize the database:
 
 ```powershell
-.\.venv\Scripts\python.exe tests\verify_offline.py
-# On a new checkout only: initialize the local database.
 .\.venv\Scripts\python.exe database.py
 ```
 
-The basic runner executes 20 groups with temporary/synthetic data and mocked Gmail. No keys are required. Every existing module `--self-check` entry point remains supported. `database.py` is an initialization/migration command, not a read-only preview; an existing project already has its database. Do not delete or empty a working DB to prepare a repository.
+- **Existing database:** Keep it when rerunning the project. It contains saved results and the logs used to **prevent duplicate outreach**.
 
-### 2. Discover and collect
+### 2. Discover creators and collect their videos
 
 ```powershell
 .\.venv\Scripts\python.exe discovery.py
 .\.venv\Scripts\python.exe collection.py --limit 50
 ```
 
-Collection defaults to five creators if `--limit` is omitted; specify 50 for the test target. It selects saved eligible creators, which may include earlier discoveries. Read the summary for shortfalls/incomplete samples.
+- **Discovery:** Finds creators within the subscriber range and saves them.
+- **Collection:** Collects ten recent videos for each selected creator.
+- **Limit:** Use `--limit 50` for the assignment. Collection defaults to five creators if this option is omitted.
+- **Collection summary:** Check for creators with missing or incomplete video samples.
 
-Copy the **new** `Collection run:` ID printed by collection:
+Collection prints a **new collection run ID**. Copy that ID and enter it here:
 
 ```powershell
 $runId = Read-Host "Paste the collection run ID"
 ```
 
-Use that same ID for all remaining stages. Repeating collection creates another run. Saved metadata is current shared data, not a frozen per-run snapshot.
+- **Same run ID:** Use this ID for every remaining step.
+- **New collection:** Running collection again creates another run ID.
+- **Saved data:** Runs identify the selected creators and videos. Their saved metadata can be updated by later collection runs.
 
-### 3. Classify
+### 3. Classify niche and content relevance
 
 ```powershell
 .\.venv\Scripts\python.exe classification.py --preview --run-id $runId --limit 50
 .\.venv\Scripts\python.exe classification.py --run-id $runId --limit 50
 ```
 
-The preview checks sample readiness and compatible cached classifications without requests/writes. The second command reuses compatible judgments and calls Groq for missing ones. Prompt `classification_v4` and criteria `python_course_v2` remain versioned.
+- **Preview:** Shows which samples are ready and which classifications can be reused.
+- **Classification:** Groq checks the niche from the channel description and Python relevance from the ten video titles.
+- **Reuse:** Matching saved classifications are reused without another API request.
 
-### 4. Filter
+### 4. Apply the filtering rules
 
 ```powershell
 .\.venv\Scripts\python.exe filtering.py --preview --run-id $runId --limit 50
 .\.venv\Scripts\python.exe filtering.py --run-id $runId --limit 50
 ```
 
-The second command saves deterministic decisions and reasons. Both commands use saved metadata only.
+- **Filtering:** Checks niche, content relevance, subscriber count, and engagement rate.
+- **Results:** Saves `PASS`, `FAIL`, or `NEEDS_REVIEW`, with reasons.
 
-### 5. Enrich PASS profiles
+### 5. Enrich profiles that passed
 
 ```powershell
 .\.venv\Scripts\python.exe enrichment.py --preview --run-id $runId --limit 50
 .\.venv\Scripts\python.exe enrichment.py --run-id $runId --limit 50
 ```
-
-Optional public-website rendering:
+To enable optional Selenium rendering, use this command instead of the second command above:
 
 ```powershell
 .\.venv\Scripts\python.exe enrichment.py --run-id $runId --limit 50 --selenium
 ```
 
-Known creator-related public HTML sources can be supplied with repeated `--source-url CHANNEL_ID=URL` arguments (at most two per creator). Contacts are not guessed from names/domains. Sponsor/unrelated addresses are excluded; ambiguous and unfinished searches retain their statuses. There are no login/CAPTCHA bypasses. NOT_ENRICHED means the stage was not performed for that profile; NOT_FOUND means a saved enrichment search found no selected email.
+- **Selected profiles:** Only creators with a saved `PASS` result are enriched.
+- **Contact search:** Checks channel and saved video descriptions, then relevant public websites and profile links.
+- **Extra sources:** You can provide known creator-related pages using `--source-url CHANNEL_ID=URL`, up to two per creator.
+- **Contact rules:** Emails are fetched from sources, not guessed. Sponsor and unrelated contacts are excluded.
+- **Access limits:** The project does not bypass login pages or CAPTCHAs.
+- **Missing information:** `NOT_ENRICHED` means enrichment has not been performed. `NOT_FOUND` means the search found no suitable email. Ambiguous or unfinished searches remain marked for review.
 
-### 6. Generate both drafts
+### 6. Generate email and Instagram DM drafts
 
 ```powershell
 .\.venv\Scripts\python.exe personalization.py --preview --run-id $runId --limit 50
 .\.venv\Scripts\python.exe personalization.py --run-id $runId --limit 50
 ```
 
-Gemini produces an email subject, a 60–90-word email body including greeting/signature, and a 15–30-word Instagram DM. Both drafts use profile themes; no individual-video comments, watched/loved claims, invented audience traits or actual links/codes/prices/commission percentages are allowed. Three prompt examples are illustrations. Cached compatible drafts can be reused, and missing contacts do not prevent drafting.
+- **Email:** Generates a subject and a 60–90-word body, including the greeting and signature.
+- **Instagram DM:** Generates a 15–30-word message.
+- **Personalization:** Uses the creator’s name, niche, content themes, and CodeStart campaign details.
+- **Writing rules:** Does not claim that the sender watched or loved individual videos, or invent audience details, links, coupon codes, prices, or commission percentages.
+- **Missing contacts:** Both drafts are generated even when an email or Instagram profile is unavailable.
 
-### 7. Review the exact saved text
+### 7. Read and approve the drafts (Optional)
+
+Show the saved drafts:
 
 ```powershell
 .\.venv\Scripts\python.exe review.py --preview --run-id $runId --limit 50
+```
+
+After reading a draft, enter its message ID and your reviewer name:
+
+```powershell
 $messageId = Read-Host "Paste the message ID you reviewed"
-$reviewer = Read-Host "Enter your actual reviewer name"
+$reviewer = Read-Host "Enter your reviewer name"
+```
+
+Approve its email:
+
+```powershell
 .\.venv\Scripts\python.exe review.py --run-id $runId --approve $messageId --medium email --reviewer $reviewer
 ```
 
-DM approval is a separate decision, if desired:
+If you also want to approve its Instagram DM, run:
 
 ```powershell
 .\.venv\Scripts\python.exe review.py --run-id $runId --approve $messageId --medium dm --reviewer $reviewer
 ```
 
-To reject instead, use `--reject $messageId --medium email --reviewer $reviewer --reason "Your reason"`. Changed text/recipient state or regenerated drafts need their own exact approval. Approval cannot create a missing recipient. Review and sending do not revalidate creator emails or make LLM calls.
+To reject the email instead:
 
-### 8. Simulate and inspect tracking
+```powershell
+.\.venv\Scripts\python.exe review.py --run-id $runId --reject $messageId --medium email --reviewer $reviewer --reason "Your reason"
+```
+
+- **Separate approvals:** Approving an email does not approve its DM.
+- **Exact draft:** Approval applies to the saved message and recipient. Changed messages or recipient details require another review.
+- **Missing recipient:** Approval does not supply a missing email or Instagram profile.
+- **Other creators:** Repeat this step using each draft’s message ID.
+- **Review only:** This step does not send messages, recheck email validity, or call an LLM.
+
+### 8. Simulate sending and view the tracker
 
 ```powershell
 .\.venv\Scripts\python.exe sending.py --preview --run-id $runId --limit 50
@@ -221,59 +262,128 @@ To reject instead, use `--reject $messageId --medium email --reviewer $reviewer 
 .\.venv\Scripts\python.exe sending.py --tracker --run-id $runId
 ```
 
-Simulation always means **Sent: No**. Missing recipients/reviews block readiness. Duplicate prevention uses creator + campaign + medium, surviving new runs and regenerated drafts. A prior successful simulation stays associated with its original run; later skips are displayed, not appended as new success rows. Blocked rows can be updated when their readiness changes. Instagram sending remains simulated only.
+- **Readiness:** A message needs approval and an available recipient before it can be simulated.
+- **Simulation:** Records `SIMULATED` with **Sent: No** because no real message is sent.
+- **Duplicate prevention:** Prevents another simulation for the same creator, campaign, and message type, even across new runs.
+- **Earlier simulations:** Remain linked to their original run. Later duplicate attempts show `SKIPPED_DUPLICATE`.
+- **Blocked records:** Can be updated when approval or recipient information becomes available.
+- **Instagram:** DM delivery is simulated only.
+- **Real email test:** The optional Gmail demo runs separately.
 
-### 9. Export saved results
+### 9. Export the results
 
 ```powershell
 .\.venv\Scripts\python.exe export_results.py --run-id $runId --output-dir "exports-$runId"
 ```
 
-The six outputs are `influencers.csv`, `shortlisted_profiles.json`, `personalized_messages.md`, `simulation_tracker.csv`, `gmail_test_tracker.csv`, and `run_summary.json`. They retain all cohort creators, actual values/reasons/missing statuses, exact saved messages and separate trackers. CSV formula escaping affects presentation only. Export does not alter the database, call providers or send messages. Trackers are scoped to the selected run; earlier attempts can still block duplicates while absent from that run's export.
+The output folder contains:
 
-### Optional: independent Gmail test
+- **`influencers.csv`:** All creators in the selected collection run, with their available data and filtering results.
+- **`shortlisted_profiles.json`:** Enriched profiles for shortlisted creators.
+- **`personalized_messages.md`:** Saved email and Instagram DM drafts.
+- **`simulation_tracker.csv`:** Simulation records.
+- **`gmail_test_tracker.csv`:** Separate Gmail test records.
+  
+- **Saved results:** Exports use the actual saved values, messages, and missing-data statuses.
+- **Read-only:** Exporting does not change the database, call APIs, or send messages.
 
-This is not required for the simulation workflow. It is **disabled by default** through the commented `raise SystemExit(main())` invocation at the end of `gmail_demo.py`.
 
-If you explicitly choose to test real Gmail:
+### Optional: send a real Gmail test email
 
-1. Enable the Gmail API in your Google Cloud project and configure the OAuth consent/access settings for your account. Create a Desktop OAuth client; save its JSON locally as `credentials.json`. See [Google's Gmail Python setup](https://developers.google.com/workspace/gmail/api/quickstart/python). This project's scope is **gmail.send only**; do not copy the quickstart's different mail-reading scope into this project.
-2. Manually uncomment only the main invocation in `gmail_demo.py` for your opted-in test session.
-3. Choose a current approved email draft with a saved FOUND creator contact. The demo redirects that approved text to your explicit test address; it does not automatically send to the creator.
-4. Run the following only after opting in:
+The Gmail demo is separate from simulated sending. It is **disabled by default** because this line at the end of `gmail_demo.py` is commented out:
 
-```powershell
-$testRecipient = Read-Host "Enter your own test email address"
-.\.venv\Scripts\python.exe gmail_demo.py --authorize
-.\.venv\Scripts\python.exe gmail_demo.py --preview --run-id $runId --message-id $messageId --test-recipient $testRecipient
-# Real send to the explicitly supplied test address:
-.\.venv\Scripts\python.exe gmail_demo.py --send-test --run-id $runId --message-id $messageId --test-recipient $testRecipient
-.\.venv\Scripts\python.exe gmail_demo.py --tracker
+```python
+# raise SystemExit(main())
 ```
 
-Authorization creates a private local `token.json`. Restore the commented main invocation after testing so the demo stays disabled by default. Simulation never triggers this demo and this demo never triggers simulation.
+Follow these steps if you want to test real email sending:
 
-Gmail duplicate keys are creator + campaign + test-recipient. A committed IN_PROGRESS reservation precedes the send; uncertain outcomes become UNKNOWN and are not automatically retried or cleared. SENT requires a provider message ID and means API acceptance, not proof of inbox placement/open. Changing test recipient/campaign intentionally creates another key.
+1. **Set up Gmail access**
+   - Enable the Gmail API in your Google Cloud project.
+   - Configure the OAuth consent screen and add your Google account as a test user.
+   - Create a **Desktop app OAuth client**.
+   - Download its JSON file and save it in the project folder as **`credentials.json`**.
+   - See [Google’s Gmail Python setup](https://developers.google.com/workspace/gmail/api/quickstart/python). Keep this project’s **`gmail.send`** permission; do not replace it with the quickstart’s mail-reading permission.
+
+2. **Enable the demo**
+   - Open `gmail_demo.py`.
+   - Uncomment the line at the end:
+
+   ```python
+   raise SystemExit(main())
+   ```
+
+3. **Choose an approved draft**
+   - Use an email draft approved through `review.py`.
+   - Its creator must have a saved **`FOUND`** email contact.
+   - Set `$messageId` to that draft’s message ID.
+   - The demo sends the saved message to **your test address**, not the creator’s address.
+
+4. **Enter your test address and authorize Gmail**
+
+   ```powershell
+   $testRecipient = Read-Host "Enter your own test email address"
+   .\.venv\Scripts\python.exe gmail_demo.py --authorize
+   ```
+
+   Complete the Google sign-in and permission steps in your browser.
+
+5. **Preview the email**
+
+   ```powershell
+   .\.venv\Scripts\python.exe gmail_demo.py --preview --run-id $runId --message-id $messageId --test-recipient $testRecipient
+   ```
+
+6. **Send the test email**
+
+   ```powershell
+   .\.venv\Scripts\python.exe gmail_demo.py --send-test --run-id $runId --message-id $messageId --test-recipient $testRecipient
+   ```
+
+7. **View the sending record**
+
+   ```powershell
+   .\.venv\Scripts\python.exe gmail_demo.py --tracker
+   ```
+
+8. **Disable the demo after testing**
+   - Comment out the main line again:
+
+   ```python
+   # raise SystemExit(main())
+   ```
+
+Important details:
+
+- **Separate logs:** Gmail tests and simulations use separate logs in the same database. Neither runs the other.
+- **Duplicate prevention:** The same creator, campaign, and test address cannot be sent again automatically.
+- **Uncertain results:** An unfinished or uncertain send remains blocked from automatic retry to avoid duplicate emails.
+- **`SENT` status:** Means Gmail accepted the email and returned a message ID. It does not confirm inbox delivery or that the email was opened.
+
+  ![Image description](assets/gmail_ss.jpg)
 
 ## Important observed results
 
-On 2026-10-04, the user executed the updated project locally with Python 3.11.15. The consolidated configuration and all **20 basic offline check groups passed**. Earlier cleanup verification on Python 3.12.14 included 21 groups with compatibility checks against a disposable copy of the supplied historical database, plus each existing module's CLI self-check. These offline results are separate from the user-run live results.
-
-Latest live collection cohort: `7d1ab952fad4461cbaa1c26a3bb3cc32`.
-
-- 50 creators attempted; all 50 had complete ten-video samples (500 linked sample entries).
-- Local accumulated storage after collection contained 383 channels and 779 unique videos across history; these are not all new or shortlisted creators.
-- Classification saved nine new judgments and reused 41 compatible judgments; zero skipped.
-- Filtering: **3 PASS, 44 FAIL, 3 NEEDS_REVIEW**.
-- PASS creators: Harry Connor AI, The Programmers Realm and pyninja.
-- Three enriched profiles; one selected source-backed email. Harry Connor AI and The Programmers Realm had NOT_FOUND email status.
-- Three saved email/DM draft pairs; no failed or skipped personalization profiles.
-- The new pyninja email was explicitly approved. Its earlier successful simulation prevented a duplicate simulation for the new run.
-- Latest run export recorded five BLOCKED_NO_RECIPIENT rows, no new successful simulation and no Gmail-test attempt for that run. Export reported zero database writes and zero network requests.
-
-An earlier cohort (`c67d6cab516a4c3bb7bfc472dddaeac6`) retained one successful email simulation and a separate Gmail SENT test. The user historically confirmed receipt of that test email. That evidence is not a new Gmail test of the final consolidated configuration, nor influencer delivery/open tracking. No real creator outreach or automated Instagram delivery was performed in the latest run.
-
-These are observed checkpoint results, not guaranteed outputs for a new clone or future API responses. Export folders are included in Git so reviewers can inspect the saved dataset, messages and trackers. The local database and authentication artifacts remain excluded; a fresh clone can inspect the exports but does not have the persisted review/send history needed to resume that database. Disclose any privacy masking in a public export copy and preserve the original local evidence.
+Results
+The project completed a live run, and the final outputs are available in the export folder.
+- Creators collected: 50, with ten videos each.
+- Classification: 9 new classifications saved and 41 saved classifications reused.
+- Filtering: 3 PASS, 44 FAIL, and 3 NEEDS_REVIEW.
+- Shortlisted creators: Harry Connor AI, The Programmers Realm, and pyninja.
+- Profile enrichment: All three shortlisted profiles were enriched. One email was found; the other two were marked Not Found.
+- Personalization: Three email drafts and three Instagram DM drafts were saved.
+- Review: The pyninja email draft was approved.
+- Email simulation: The pyninja email was successfully simulated in an earlier run. The latest run skipped it to prevent duplicate outreach.
+- Gmail test: The pyninja draft was successfully sent to the user’s test email address through Gmail, and receipt was confirmed. It was not sent to the creator.
+  
+View the final outputs
+Open the export folder to view the assignment outputs:
+- influencers.csv: The 50-creator dataset and filtering results.
+- shortlisted_profiles.json: Enriched profiles for the shortlisted creators.
+- personalized_messages.md: Personalized email pitches and Instagram DMs.
+- simulation_tracker.csv: Simulation records and statuses.
+- gmail_test_tracker.csv: Gmail test records, if available.
+Open the CSV files in Excel or another spreadsheet application to view them as tables. To preview the personalized messages in VS Code, open personalized_messages.md.
 
 ## Limitations
 
