@@ -1,0 +1,38 @@
+# Credentials and environment secrets
+credentials.json
+client_secret*.json
+token.json
+credentials*.json
+token*.json
+*.key
+*.pem
+secrets/
+.env
+.env.*
+!.env.example
+
+# Local Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+.ruff_cache/
+
+# Local databases and recovery history
+data/
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite3
+backups/
+backup*/
+*.bak
+
+# Generated exports/logs may contain contacts, source text and test recipients.
+*.log
+gmail_test_tracker.csv

@@ -1,0 +1,10 @@
+# Direct dependencies pinned to versions observed in the supplied ZIP environment.
+# Clean installation verified on CPython 3.12.14; see README.md.
+httpx==0.28.1
+pydantic==2.13.5
+beautifulsoup4==4.15.0
+selenium==4.50.0
+google-api-python-client==2.201.0
+google-auth[requests]==2.59.1
+google-auth-oauthlib==1.5.0
+python-dotenv==1.2.4

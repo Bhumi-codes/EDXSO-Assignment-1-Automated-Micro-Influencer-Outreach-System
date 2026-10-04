@@ -1,0 +1,37 @@
+{
+  "collection_run_id": "c67d6cab516a4c3bb7bfc472dddaeac6",
+  "exported_at": "2026-10-03T22:42:46.113627+00:00",
+  "cohort_influencers": 50,
+  "minimum_50_met": true,
+  "filtering_status_counts": {
+    "FAIL": 44,
+    "PASS": 3,
+    "NEEDS_REVIEW": 3
+  },
+  "enriched_current_PASS_profiles": 3,
+  "selected_emails_found": 1,
+  "personalized_draft_pairs": 3,
+  "simulation_status_counts": {
+    "BLOCKED_NO_RECIPIENT": 5,
+    "SIMULATED": 1
+  },
+  "gmail_test_status_counts": {
+    "SENT": 1
+  },
+  "database_writes": false,
+  "network_requests": 0,
+  "notes": [
+    "Channel metadata is current saved data, not a per-run snapshot.",
+    "Only enrichment linked to the current PASS filtering result is exported.",
+    "Not enriched does not mean an email search returned Not Found.",
+    "Simulation is not a real send; Gmail SENT means API acceptance, not automated inbox verification.",
+    "CSV formula escaping changes presentation only; JSON and database retain original values."
+  ],
+  "files_sha256": {
+    "influencers.csv": "33fc06f9f55163a5daf80b2c690f1bc297d785c4c1adda6bfdd4e68633088dfb",
+    "shortlisted_profiles.json": "b469e43f62c01ace39a50aa81be5cc85861b3b5d2091408c822cdb8d63ab3547",
+    "personalized_messages.md": "b61d0710382fc7788284b8cb5490746f4ca71656fd926cc6f2b33ea8ab7e3470",
+    "simulation_tracker.csv": "a89df6a6c52c135f5ad7db05f639747f316924d649619c36b06eff314f8191c4",
+    "gmail_test_tracker.csv": "8b94af70eab851e792566a5eded0f7d2a1e6bb66751538b65103d7b7d733a477"
+  }
+}

@@ -1,0 +1,1169 @@
+[
+  {
+    "enrichment_id": "1ab179a5ed2541c1a1a09b076478c927",
+    "filtering_id": "a214c1156de14f4aabffcd42cac4e1fb",
+    "collection_run_id": "c67d6cab516a4c3bb7bfc472dddaeac6",
+    "channel_id": "UC6jg9Jwzo4HKMQ-iunze0VQ",
+    "input_fingerprint": "7964dee698eac37807beae8fb112f5fddccbb77e4dcd61c76cea9e0d7547d421",
+    "base_input_fingerprint": "7964dee698eac37807beae8fb112f5fddccbb77e4dcd61c76cea9e0d7547d421",
+    "policy_version": "public_contacts_v1",
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "enrichment_v2",
+    "influencer_name": "Harry Connor AI",
+    "platform": "YouTube",
+    "profile_url": "https://www.youtube.com/channel/UC6jg9Jwzo4HKMQ-iunze0VQ",
+    "follower_count": 16600,
+    "engagement_rate_percent": "3.075301204819277108433734940",
+    "engagement_formula": "mean_interactions_per_subscriber_v1",
+    "metrics_observed_at": "2026-10-02T12:49:54.477224Z",
+    "category": "TECHNOLOGY",
+    "content_themes": [
+      {
+        "name": "Machine Learning Algorithms from Scratch",
+        "video_ids": [
+          "Okn4QkyTxe4",
+          "Yu_eqv8gATs",
+          "V33JX4cFls4",
+          "3giTXZbyf1Q",
+          "Jj7WD71qQWE"
+        ]
+      },
+      {
+        "name": "Machine Learning Fundamentals and Concepts",
+        "video_ids": [
+          "ZQ4IwBg6U5c",
+          "7Ir7ZDMxsfk",
+          "b98JjA--bcw"
+        ]
+      },
+      {
+        "name": "Python Programming for AI/ML",
+        "video_ids": [
+          "oD8W_xFWo3A"
+        ]
+      },
+      {
+        "name": "Curated Resources for AI/ML",
+        "video_ids": [
+          "AXUZXHIHYCM"
+        ]
+      }
+    ],
+    "contact_email": null,
+    "email_status": "NOT_FOUND",
+    "email_display": "Not Found",
+    "email_deliverability": "NOT_VERIFIED",
+    "instagram_urls": [],
+    "website_urls": [
+      "https://github.com/harryconnor/Machine-Learning-From-Scratch",
+      "https://github.com/harryconnor",
+      "https://www.linkedin.com/in/harryconnor/",
+      "https://www.youtube.com/@harryconnorai"
+    ],
+    "candidates": [
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/academic/awesome-datascience",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/chiphuyen/dmls-book",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/josephmisiti/awesome-machine-learning",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/sindresorhus/awesome",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/jakevdp/PythonDataScienceHandbook",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/karpathy/nn-zero-to-hero",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/karpathy/minGPT",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/aishwaryanr/awesome-generative-ai-guide",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/GokuMohandas/Made-With-ML",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/practical-tutorials/project-based-learning",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/codecrafters-io/build-your-own-x",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/ageron/handson-ml3",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/visenger/awesome-mlops",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/vinta/awesome-python",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/kamranahmedse/developer-roadmap",
+        "source_id": "video:AXUZXHIHYCM",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.youtube.com/playlist?list=PLh6JMkwECi5HXVJ58ue58jJvL599NFYja",
+        "source_id": "video:Okn4QkyTxe4",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.kaggle.com/datasets/uciml/iris",
+        "source_id": "video:Okn4QkyTxe4",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.youtube.com/watch?v=Ej_02ICOIgs",
+        "source_id": "video:oD8W_xFWo3A",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/",
+        "source_id": "video:oD8W_xFWo3A",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.amazon.co.uk/Deep-Learning-Pytorch-Eli-Stevens/dp/1617295264",
+        "source_id": "video:oD8W_xFWo3A",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/jakevdp/PythonDataScienceHandbook",
+        "source_id": "video:oD8W_xFWo3A",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.py4e.com",
+        "source_id": "video:oD8W_xFWo3A",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.coursera.org/specializations/python",
+        "source_id": "video:oD8W_xFWo3A",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.w3schools.com/python/",
+        "source_id": "video:oD8W_xFWo3A",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://education.github.com/git-cheat-sheet-education.pdf",
+        "source_id": "video:oD8W_xFWo3A",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://realpython.com/python-virtual-environments-a-primer/",
+        "source_id": "video:oD8W_xFWo3A",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.youtube.com/playlist?list=PLh6JMkwECi5HXVJ58ue58jJvL599NFYja",
+        "source_id": "video:Yu_eqv8gATs",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data",
+        "source_id": "video:Yu_eqv8gATs",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.youtube.com/playlist?list=PLh6JMkwECi5HXVJ58ue58jJvL599NFYja",
+        "source_id": "video:V33JX4cFls4",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data",
+        "source_id": "video:V33JX4cFls4",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.youtube.com/playlist?list=PLh6JMkwECi5HXVJ58ue58jJvL599NFYja",
+        "source_id": "video:3giTXZbyf1Q",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.youtube.com/playlist?list=PLh6JMkwECi5HXVJ58ue58jJvL599NFYja",
+        "source_id": "video:Jj7WD71qQWE",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.kaggle.com/datasets/krishnaraj30/salary-prediction-data-simple-linear-regression",
+        "source_id": "video:Jj7WD71qQWE",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://jakevdp.github.io/PythonDataScienceHandbook/",
+        "source_id": "video:oD8W_xFWo3A",
+        "role": "UNRELATED",
+        "reason": "The URL points to Jake VanderPlas' Python Data Science Handbook site, which is unrelated to the creator Harry Connor."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/tags",
+        "source_id": "website:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Logistic_Regression.ipynb",
+        "source_id": "website:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Naive_Bayes.ipynb",
+        "source_id": "website:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/commits/main/",
+        "source_id": "website:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/branches",
+        "source_id": "website:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Decision_Tree.ipynb",
+        "source_id": "website:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/activity",
+        "source_id": "website:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/README.md",
+        "source_id": "website:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Linear_Regression.ipynb",
+        "source_id": "website:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/KNN.ipynb",
+        "source_id": "website:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/forks",
+        "source_id": "website:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/tags",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/commits?author=harryconnor",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/8942b198cd9c4932909161abf4c97b04ecabc557",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Logistic_Regression.ipynb",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/releases",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Naive_Bayes.ipynb",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/graphs/contributors",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/commits/main/",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/branches",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/8efc8610eab0d18cfc7e0b31dc30221b343cde7f",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Decision_Tree.ipynb",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/activity",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/README.md",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Linear_Regression.ipynb",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/search?l=jupyter-notebook",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/1f147fafffa3e74888c12de56dcfaa375cf23660",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/88a0d2c0c9701e48e8d08e84b70bf5a866d171f4",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/e93897305024d90f2ee806968f582c130f6a6e8f",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/0957a2b0c7dfcfebd86824995001ec14c15698f8",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/KNN.ipynb",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/forks",
+        "source_id": "browser:0:1",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/harryconnor",
+        "source_id": "website:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Life-Expectancy-Analysis",
+        "source_id": "website:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Predicting-F1-Pit-Stops",
+        "source_id": "website:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Targeted-Promotion-Optimisation",
+        "source_id": "website:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Next-Day-Return-Forecasting",
+        "source_id": "website:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/stargazers",
+        "source_id": "website:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Customer-Segmentation-Retention-Analysis",
+        "source_id": "website:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/forks",
+        "source_id": "website:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Life-Expectancy-Analysis/stargazers",
+        "source_id": "website:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/harryconnor",
+        "source_id": "browser:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Life-Expectancy-Analysis",
+        "source_id": "browser:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Predicting-F1-Pit-Stops",
+        "source_id": "browser:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Targeted-Promotion-Optimisation",
+        "source_id": "browser:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Next-Day-Return-Forecasting",
+        "source_id": "browser:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/stargazers",
+        "source_id": "browser:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/spekb/SotonHack26",
+        "source_id": "browser:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Customer-Segmentation-Retention-Analysis",
+        "source_id": "browser:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch/forks",
+        "source_id": "browser:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Life-Expectancy-Analysis/stargazers",
+        "source_id": "browser:0:2",
+        "role": "UNCERTAIN",
+        "reason": "Literal candidate; ownership not yet established."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor/Machine-Learning-From-Scratch",
+        "source_id": "video:Okn4QkyTxe4",
+        "role": "CREATOR_PROFILE",
+        "reason": "The GitHub repository URL is under the harryconnor username and is referenced in the creator's videos as the source code for the tutorials, indicating it is the creator's own project site."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://github.com/harryconnor",
+        "source_id": "website:0:1",
+        "role": "CREATOR_PROFILE",
+        "reason": "The GitHub user profile https://github.com/harryconnor is explicitly linked from the channel and matches the creator's name, serving as the creator's personal developer profile."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.linkedin.com/in/harryconnor/",
+        "source_id": "website:0:2",
+        "role": "CREATOR_PROFILE",
+        "reason": "The LinkedIn URL points to a personal profile for Harry Connor, which is presented alongside other creator-owned links, indicating it is the creator's own professional profile."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.githubstatus.com/",
+        "source_id": "website:0:2",
+        "role": "UNRELATED",
+        "reason": "The URL is for the generic GitHub status page, unrelated to the creator's personal or business contacts."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://www.youtube.com/@harryconnorai",
+        "source_id": "website:0:2",
+        "role": "CREATOR_PROFILE",
+        "reason": "The URL points to the creator's own YouTube channel (@harryconnorai), which is explicitly linked from the validated creator website."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://avatars.githubusercontent.com/u/196474833?v=4",
+        "source_id": "website:0:2",
+        "role": "UNRELATED",
+        "reason": "The URL is a GitHub avatar image; it does not serve as a contact address or creator-owned site."
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "channel",
+        "kind": "CHANNEL_DESCRIPTION",
+        "url": "https://www.youtube.com/channel/UC6jg9Jwzo4HKMQ-iunze0VQ",
+        "text": "Hi, I'm Harry! I’m learning AI, Machine Learning and Data Science, and sharing everything I pick up along the way. I’ve found the most helpful lessons often come from someone just one step ahead. So, wherever you are in your journey, you’ll find videos here that break these topics down in a way that’s easy to follow and understand.",
+        "observed_at": "2026-10-02T12:49:54.477224Z"
+      },
+      {
+        "source_id": "video:AXUZXHIHYCM",
+        "kind": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=AXUZXHIHYCM",
+        "text": "Best GitHub repos for learning AI, Machine Learning and Data Science. These include practical resources, books and hands-on projects to build real-world skills.\n\nGITHUB REPOS MENTIONED\nAwesome Lists: https://github.com/sindresorhus/awesome\nAwesome Python: https://github.com/vinta/awesome-python\nAwesome Machine Learning: https://github.com/josephmisiti/awesome-machine-learning\nAwesome Data Science: https://github.com/academic/awesome-datascience\nAwesome MLOps: https://github.com/visenger/awesome-mlops\nRoadmap.sh: https://github.com/kamranahmedse/developer-roadmap\nOreilly Books:\nhttps://github.com/jakevdp/PythonDataScienceHandbook\nhttps://github.com/ageron/handson-ml3\nhttps://github.com/chiphuyen/dmls-book\nNeural Networks Zero to Hero: https://github.com/karpathy/nn-zero-to-hero\nminGPT: https://github.com/karpathy/minGPT\nProject Based Learning: https://github.com/practical-tutorials/project-based-learning\nBuild Your Own X: https://github.com/codecrafters-io/build-your-own-x\nGen AI Guide: https://github.com/aishwaryanr/awesome-generative-ai-guide\nMade With ML: https://github.com/GokuMohandas/Made-With-ML\n\nTIMESTAMPS\n0:00 - Introduction\n0:11 - Repo 1\n1:21 - Repo 2\n1:46 - Repo 3\n2:17 - Repo 4\n2:41 - Repo 5\n2:59 - Repo 6\n3:32 - Repo 7\n3:53 - Repo 8\n4:08 - Repo 9\n\n#ai #machinelearning #datascience",
+        "observed_at": "2026-10-02T12:54:59.255962Z"
+      },
+      {
+        "source_id": "video:Okn4QkyTxe4",
+        "kind": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=Okn4QkyTxe4",
+        "text": "Learn how to implement a Decision Tree from scratch in Python using just math and NumPy (no machine learning libraries like Scikit-Learn). I’ll start by explaining the intuition and core math concepts behind Decision Trees, including Entropy, Gini Impurity and Information Gain, and then walk through how to turn that into code. \nThis is Episode 5 of my Machine Learning From Scratch series, where I’m building ML algorithms from the ground up, step-by-step to truly understand how they work under the hood.\n\n📺 Watch the playlist here: https://www.youtube.com/playlist?list=PLh6JMkwECi5HXVJ58ue58jJvL599NFYja\n📊 Kaggle Dataset: https://www.kaggle.com/datasets/uciml/iris\n💻 Full Code on GitHub: https://github.com/harryconnor/Machine-Learning-From-Scratch\n\nTIMESTAMPS:\n00:00 - Introduction\n00:23 - PART 1: Intuition & Math\n05:21 - PART 2: Coding it up\n\n#python #machinelearning",
+        "observed_at": "2026-10-02T12:54:59.255962Z"
+      },
+      {
+        "source_id": "video:oD8W_xFWo3A",
+        "kind": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=oD8W_xFWo3A",
+        "text": "The essential python skills you need in artificial intelligence and machine learning, including libraries like NumPy, Pandas, Matplotlib, Scikit-Learn and PyTorch. In this video, I break down why you should learn python for AI/ML, then walk you through the core python concepts you need to know, giving you a clear roadmap for your own studies. I’ll also share the free resources that helped me along the way.\n\nRESOURCES MENTIONED\nPython Virtual Environments: https://realpython.com/python-virtual-environments-a-primer/\nW3Schools: https://www.w3schools.com/python/\nPY4E: https://www.py4e.com\nPython for Everybody Specialization: https://www.coursera.org/specializations/python\nPython Data Science Handbook: https://jakevdp.github.io/PythonDataScienceHandbook/\nPython Data Science Handbook GitHub: https://github.com/jakevdp/PythonDataScienceHandbook\nfreeCodeCamp OOP with Python: https://www.youtube.com/watch?v=Ej_02ICOIgs\nGIT CHEAT SHEET: https://education.github.com/git-cheat-sheet-education.pdf\nHands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/\nDeep Learning with PyTorch: https://www.amazon.co.uk/Deep-Learning-Pytorch-Eli-Stevens/dp/1617295264\n\nTIMESTAMPS\n0:00 - Introduction\n0:26 - Why Should You Even Learn Python for AI/ML?\n1:25 - Stage 1\n2:19 - Stage 2\n3:09 - Stage 3\n3:58 - Stage 4\n5:17 - Stage 5\n\n#python #ai #machinelearning #datascience",
+        "observed_at": "2026-10-02T12:54:59.255962Z"
+      },
+      {
+        "source_id": "video:Yu_eqv8gATs",
+        "kind": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=Yu_eqv8gATs",
+        "text": "Learn how to implement a Naive Bayes Classifier from scratch in Python using just math and NumPy (no machine learning libraries like Scikit-Learn). I’ll start by explaining the core math concepts behind Naive Bayes, including the Bayes Theorem and the Gaussian Distribution to deal with continuous features, and then walk through how to turn that into code.\nThis is Episode 4 of my Machine Learning From Scratch series, where I’m building ML algorithms from the ground up, step-by-step to truly understand how they work under the hood.\n\n📺 Watch the Playlist Here: https://www.youtube.com/playlist?list=PLh6JMkwECi5HXVJ58ue58jJvL599NFYja\n📊 Kaggle Dataset: https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data\n💻 Full Code on GitHub: https://github.com/harryconnor/Machine-Learning-From-Scratch\n\nTIMESTAMPS:\n00:00 - Introduction\n00:23 - PART 1: The Math\n05:00 - PART 2: Coding it up\n\n#machinelearning #python",
+        "observed_at": "2026-10-02T12:54:59.255962Z"
+      },
+      {
+        "source_id": "video:V33JX4cFls4",
+        "kind": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=V33JX4cFls4",
+        "text": "Learn how to implement the K-Nearest Neighbors (KNN) algorithm from scratch in Python using just math and NumPy (no machine learning libraries like Scikit-Learn). I’ll start by explaining the intuition and core math concepts behind KNN, including the euclidian distance and majority voting, and then walk through how to turn this into code.\nThis is Episode 3 of my Machine Learning From Scratch series, where I’m building ML algorithms from the ground up, step-by-step to truly understand how they work under the hood.\n\n📺 Watch the Playlist Here: https://www.youtube.com/playlist?list=PLh6JMkwECi5HXVJ58ue58jJvL599NFYja\n📊 Kaggle Dataset: https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data\n💻 Full Code on GitHub: https://github.com/harryconnor/Machine-Learning-From-Scratch\n\nTIMESTAMPS:\n00:00 - Introduction\n00:22 - PART 1: Intuition & Math\n03:26 - PART 2: Coding it up\n\n#machinelearning #python",
+        "observed_at": "2026-10-02T12:54:59.255962Z"
+      },
+      {
+        "source_id": "video:3giTXZbyf1Q",
+        "kind": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=3giTXZbyf1Q",
+        "text": "Learn how to implement a Logistic Regression model in Python using just math and NumPy (no machine learning libraries like Scikit-Learn). I’ll walk through the core math behind logistic regression, including the sigmoid function, decision boundaries, and the cost function, and then show how to turn those equations into code.\nThis is Episode 2 of my Machine Learning From Scratch series, where I’m building ML algorithms from the ground up, step-by-step to truly understand how they work under the hood.\n\n📺 Watch the Playlist Here: https://www.youtube.com/playlist?list=PLh6JMkwECi5HXVJ58ue58jJvL599NFYja\n💻 Full Code on GitHub: https://github.com/harryconnor/Machine-Learning-From-Scratch\n\nTIMESTAMPS:\n00:00 - Introduction\n00:21 - PART 1: The Math\n09:50 - PART 2: Coding it up\n\n#machinelearning #python",
+        "observed_at": "2026-10-02T12:54:59.255962Z"
+      },
+      {
+        "source_id": "video:Jj7WD71qQWE",
+        "kind": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=Jj7WD71qQWE",
+        "text": "Learn how to implement a Linear Regression model in Python using just math and NumPy (no machine learning libraries like Scikit-Learn). I’ll start by explaining the core math concepts behind linear regression, including the cost function and gradient descent, and then walk through how to turn those equations into code.\nThis is part of my Machine Learning From Scratch series, where I'll be building ML algorithms from the ground up, step-by-step to truly understand how they work under the hood.\n\n📺 Watch the Playlist Here: https://www.youtube.com/playlist?list=PLh6JMkwECi5HXVJ58ue58jJvL599NFYja\n📊 Kaggle Dataset: https://www.kaggle.com/datasets/krishnaraj30/salary-prediction-data-simple-linear-regression\n💻 Full Code on GitHub: https://github.com/harryconnor/Machine-Learning-From-Scratch\n\nTIMESTAMPS:\n00:00 - Introduction\n00:22 - PART 1: The Math\n04:10 - PART 2: Coding it up\n\n#machinelearning #python",
+        "observed_at": "2026-10-02T12:54:59.255962Z"
+      },
+      {
+        "source_id": "website:0:1",
+        "kind": "WEBSITE",
+        "url": "https://github.com/harryconnor/Machine-Learning-From-Scratch",
+        "text": "harryconnor / Machine-Learning-From-Scratch Public You must be signed in to change notification settings main Branches Tags Go to file Code Open more actions menu Latest commit History 14 Commits 14 Commits Folders and files Name Name Last commit message Last commit date Decision_Tree.ipynb Decision_Tree.ipynb KNN.ipynb KNN.ipynb Linear_Regression.ipynb Linear_Regression.ipynb Logistic_Regression.ipynb Logistic_Regression.ipynb Naive_Bayes.ipynb Naive_Bayes.ipynb README.md README.md View all files Repository files navigation Machine-Learning-From-Scratch Building machine learning algorithms from the ground up in Python. This will be an ongoing project and I aim to cover the following: Linear Regression ✅ Logistic Regression ✅ K-Nearest Neighbors (KNN) ✅ Principal Component Analysis (PCA) Decision Trees ✅ Random Forests Naive Bayes ✅ K-Means Support Vector Machine (SVM) Neural Network About Building machine learning algorithms from the ground up in Python. Resources Readme Activity Stars 43 stars Watchers 2 watching Forks 4 forks Releases Packages Contributors Languages\nharryconnor: https://github.com/harryconnor\nMachine-Learning-From-Scratch: https://github.com/harryconnor/Machine-Learning-From-Scratch\n: https://github.com/harryconnor/Machine-Learning-From-Scratch\nBranches: https://github.com/harryconnor/Machine-Learning-From-Scratch/branches\nTags: https://github.com/harryconnor/Machine-Learning-From-Scratch/tags\n: https://github.com/harryconnor/Machine-Learning-From-Scratch/branches\n: https://github.com/harryconnor/Machine-Learning-From-Scratch/tags\n14 Commits: https://github.com/harryconnor/Machine-Learning-From-Scratch/commits/main/\n: https://github.com/harryconnor/Machine-Learning-From-Scratch/commits/main/\nDecision_Tree.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Decision_Tree.ipynb\nDecision_Tree.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Decision_Tree.ipynb\nKNN.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/KNN.ipynb\nKNN.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/KNN.ipynb\nLinear_Regression.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Linear_Regression.ipynb\nLinear_Regression.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Linear_Regression.ipynb\nLogistic_Regression.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Logistic_Regression.ipynb\nLogistic_Regression.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Logistic_Regression.ipynb\nNaive_Bayes.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Naive_Bayes.ipynb\nNaive_Bayes.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Naive_Bayes.ipynb\nREADME.md: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/README.md\nREADME.md: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/README.md\n: https://github.com/harryconnor/Machine-Learning-From-Scratch#machine-learning-from-scratch\nReadme: https://github.com/harryconnor/Machine-Learning-From-Scratch#readme-ov-file\nActivity: https://github.com/harryconnor/Machine-Learning-From-Scratch/activity\n4 forks: https://github.com/harryconnor/Machine-Learning-From-Scratch/forks",
+        "observed_at": "2026-10-03T12:27:27.661983Z"
+      },
+      {
+        "source_id": "browser:0:1",
+        "kind": "WEBSITE",
+        "url": "https://github.com/harryconnor/Machine-Learning-From-Scratch",
+        "text": "harryconnor / Machine-Learning-From-Scratch Public You must be signed in to change notification settings main 1 Branch 0 Tags Go to file Code Open more actions menu Latest commit harryconnor Decision Tree Oct 3, 2025 8942b19 · Oct 3, 2025 History 14 Commits Open commit details 14 Commits Folders and files Name Name Last commit message Last commit date Decision_Tree.ipynb Decision_Tree.ipynb Decision Tree Oct 3, 2025 KNN.ipynb KNN.ipynb K-Nearest Neighbors Aug 12, 2025 Linear_Regression.ipynb Linear_Regression.ipynb Linear Regression Jul 10, 2025 Logistic_Regression.ipynb Logistic_Regression.ipynb Logistic Regression Aug 1, 2025 Naive_Bayes.ipynb Naive_Bayes.ipynb Naive Bayes Aug 27, 2025 README.md README.md Update README.md Oct 3, 2025 View all files Repository files navigation Machine-Learning-From-Scratch Building machine learning algorithms from the ground up in Python. This will be an ongoing project and I aim to cover the following: Linear Regression ✅ Logistic Regression ✅ K-Nearest Neighbors (KNN) ✅ Principal Component Analysis (PCA) Decision Trees ✅ Random Forests Naive Bayes ✅ K-Means Support Vector Machine (SVM) Neural Network About Building machine learning algorithms from the ground up in Python. Resources Readme Activity Stars 43 stars Watchers 2 watching Forks 4 forks Releases No releases published Contributors 1 (1) harryconnor Harry Connor Languages Jupyter Notebook 100%\nharryconnor: https://github.com/harryconnor\nMachine-Learning-From-Scratch: https://github.com/harryconnor/Machine-Learning-From-Scratch\n: https://github.com/harryconnor/Machine-Learning-From-Scratch\n1 Branch: https://github.com/harryconnor/Machine-Learning-From-Scratch/branches\n0 Tags: https://github.com/harryconnor/Machine-Learning-From-Scratch/tags\n: https://github.com/harryconnor/Machine-Learning-From-Scratch/branches\n: https://github.com/harryconnor/Machine-Learning-From-Scratch/tags\n: https://github.com/harryconnor\nharryconnor: https://github.com/harryconnor/Machine-Learning-From-Scratch/commits?author=harryconnor\nDecision Tree: https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/8942b198cd9c4932909161abf4c97b04ecabc557\n8942b19: https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/8942b198cd9c4932909161abf4c97b04ecabc557\n14 Commits: https://github.com/harryconnor/Machine-Learning-From-Scratch/commits/main/\n: https://github.com/harryconnor/Machine-Learning-From-Scratch/commits/main/\nDecision_Tree.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Decision_Tree.ipynb\nDecision_Tree.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Decision_Tree.ipynb\nDecision Tree: https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/8942b198cd9c4932909161abf4c97b04ecabc557\nKNN.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/KNN.ipynb\nKNN.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/KNN.ipynb\nK-Nearest Neighbors: https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/0957a2b0c7dfcfebd86824995001ec14c15698f8\nLinear_Regression.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Linear_Regression.ipynb\nLinear_Regression.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Linear_Regression.ipynb\nLinear Regression: https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/8efc8610eab0d18cfc7e0b31dc30221b343cde7f\nLogistic_Regression.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Logistic_Regression.ipynb\nLogistic_Regression.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Logistic_Regression.ipynb\nLogistic Regression: https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/e93897305024d90f2ee806968f582c130f6a6e8f\nNaive_Bayes.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Naive_Bayes.ipynb\nNaive_Bayes.ipynb: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/Naive_Bayes.ipynb\nNaive Bayes: https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/88a0d2c0c9701e48e8d08e84b70bf5a866d171f4\nREADME.md: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/README.md\nREADME.md: https://github.com/harryconnor/Machine-Learning-From-Scratch/blob/main/README.md\nUpdate README.md: https://github.com/harryconnor/Machine-Learning-From-Scratch/commit/1f147fafffa3e74888c12de56dcfaa375cf23660\n: https://github.com/harryconnor/Machine-Learning-From-Scratch#machine-learning-from-scratch\nReadme: https://github.com/harryconnor/Machine-Learning-From-Scratch#readme-ov-file\nActivity: https://github.com/harryconnor/Machine-Learning-From-Scratch/activity\n4 forks: https://github.com/harryconnor/Machine-Learning-From-Scratch/forks\nReleases: https://github.com/harryconnor/Machine-Learning-From-Scratch/releases\nContributors: https://github.com/harryconnor/Machine-Learning-From-Scratch/graphs/contributors\n: https://github.com/harryconnor\nharryconnor Harry Connor: https://github.com/harryconnor\nJupyter Notebook 100%: https://github.com/harryconnor/Machine-Learning-From-Scratch/search?l=jupyter-notebook",
+        "observed_at": "2026-10-03T12:28:51.248744Z"
+      },
+      {
+        "source_id": "website:0:2",
+        "kind": "WEBSITE",
+        "url": "https://github.com/harryconnor",
+        "text": "harryconnor More Overview harryconnor 💻 Harry Connor harryconnor 💻 · United Kingdom 13:28 (UTC +01:00) @harryconnorai in/harryconnor Highlights Pro Block or report user Block or report harryconnor Block user Prevent this user from interacting with your repositories and sending you notifications.\n            Learn more about . You must be logged in to block users. Close all issues, pull requests, and discussions opened by this user Content in all repositories owned by your account will be closed. Add an optional note Maximum 250 characters. Please don’t include any personal information such as legal names or email addresses. Markdown is supported. This note will only be visible to you. Block user Report abuse Contact GitHub support about this user’s behavior.\n          Learn more about . More Overview harryconnor / README .md Hi, I’m Harry 👋 I'm a MEng Artificial Intelligence student at the University of Southampton. I build models with: Python SQL MATLAB C/C++ Zsh/Bash Git ... I also make educational videos on YouTube where I share what I’m learning in AI, Machine Learning, and Data Science. Pinned Loading Machine-Learning-From-Scratch Machine-Learning-From-Scratch Public Building machine learning algorithms from the ground up in Python. Jupyter Notebook 43 4 Life-Expectancy-Analysis Life-Expectancy-Analysis Public Analysis of the factors influencing life expectancy across 193 countries from 2000 to 2015. Jupyter Notebook 2 Customer-Segmentation-Retention-Analysis Customer-Segmentation-Retention-Analysis Public Customer segmentation and retention modeling using SQL and Python on online retail transaction data. Jupyter Notebook Predicting-F1-Pit-Stops Predicting-F1-Pit-Stops Public Predicting whether an F1 driver will pit on the next lap using a blend of LightGBM and CatBoost models. Jupyter Notebook Targeted-Promotion-Optimisation Targeted-Promotion-Optimisation Public Using A/B testing and a gradient boosting model to decide who should receive a promotion. Jupyter Notebook Next-Day-Return-Forecasting Next-Day-Return-Forecasting Public A simple Random Forest model for forecasting next-day S&P 500 returns, with backtesting and Monte Carlo evaluation. Python Something went wrong, please refresh the page to try again. If the problem persists, check the GitHub status page or . Uh oh! There was an error while loading. Please reload this page .\nOverview: https://github.com/harryconnor\n: https://avatars.githubusercontent.com/u/196474833?v=4\n@harryconnorai: https://www.youtube.com/@harryconnorai\nin/harryconnor: https://www.linkedin.com/in/harryconnor/\nOverview: https://github.com/harryconnor\nharryconnor: https://github.com/harryconnor/harryconnor\n: https://github.com/harryconnor#hi-im-harry-\nYouTube: https://www.youtube.com/@harryconnorai\nMachine-Learning-From-Scratch: https://github.com/harryconnor/Machine-Learning-From-Scratch\n43: https://github.com/harryconnor/Machine-Learning-From-Scratch/stargazers\n4: https://github.com/harryconnor/Machine-Learning-From-Scratch/forks\nLife-Expectancy-Analysis: https://github.com/harryconnor/Life-Expectancy-Analysis\n2: https://github.com/harryconnor/Life-Expectancy-Analysis/stargazers\nCustomer-Segmentation-Retention-Analysis: https://github.com/harryconnor/Customer-Segmentation-Retention-Analysis\nPredicting-F1-Pit-Stops: https://github.com/harryconnor/Predicting-F1-Pit-Stops\nTargeted-Promotion-Optimisation: https://github.com/harryconnor/Targeted-Promotion-Optimisation\nNext-Day-Return-Forecasting: https://github.com/harryconnor/Next-Day-Return-Forecasting\nGitHub status page: https://www.githubstatus.com/\nPlease reload this page: https://github.com/harryconnor",
+        "observed_at": "2026-10-03T12:28:54.448263Z"
+      },
+      {
+        "source_id": "browser:0:2",
+        "kind": "WEBSITE",
+        "url": "https://github.com/harryconnor",
+        "text": "harryconnor More Overview harryconnor 💻 Harry Connor harryconnor 💻 · United Kingdom 13:29 - 4h30m behind @harryconnorai in/harryconnor Highlights Pro Block or report user Block or report harryconnor Block user Prevent this user from interacting with your repositories and sending you notifications.\n            Learn more about . You must be logged in to block users. Close all issues, pull requests, and discussions opened by this user Content in all repositories owned by your account will be closed. Add an optional note Maximum 250 characters. Please don’t include any personal information such as legal names or email addresses. Markdown is supported. This note will only be visible to you. Block user Report abuse Contact GitHub support about this user’s behavior.\n          Learn more about . More Overview harryconnor / README .md Hi, I’m Harry 👋 I'm a MEng Artificial Intelligence student at the University of Southampton. I build models with: Python SQL MATLAB C/C++ Zsh/Bash Git ... I also make educational videos on YouTube where I share what I’m learning in AI, Machine Learning, and Data Science. Pinned Loading Machine-Learning-From-Scratch Machine-Learning-From-Scratch Public Building machine learning algorithms from the ground up in Python. Jupyter Notebook 43 4 Life-Expectancy-Analysis Life-Expectancy-Analysis Public Analysis of the factors influencing life expectancy across 193 countries from 2000 to 2015. Jupyter Notebook 2 Customer-Segmentation-Retention-Analysis Customer-Segmentation-Retention-Analysis Public Customer segmentation and retention modeling using SQL and Python on online retail transaction data. Jupyter Notebook Predicting-F1-Pit-Stops Predicting-F1-Pit-Stops Public Predicting whether an F1 driver will pit on the next lap using a blend of LightGBM and CatBoost models. Jupyter Notebook Targeted-Promotion-Optimisation Targeted-Promotion-Optimisation Public Using A/B testing and a gradient boosting model to decide who should receive a promotion. Jupyter Notebook Next-Day-Return-Forecasting Next-Day-Return-Forecasting Public A simple Random Forest model for forecasting next-day S&P 500 returns, with backtesting and Monte Carlo evaluation. Python 90\n      contributions\n        in the last year Skip to contributions year list No contributions on September 28th. No contributions on October 5th. No contributions on October 12th. No contributions on October 19th. No contributions on October 26th. No contributions on November 2nd. No contributions on November 9th. No contributions on November 16th. No contributions on November 23rd. No contributions on November 30th. No contributions on December 7th. No contributions on December 14th. No contributions on December 21st. No contributions on December 28th. No contributions on January 4th. No contributions on January 11th. No contributions on January 18th. No contributions on January 25th. No contributions on February 1st. No contributions on February 8th. No contributions on February 15th. No contributions on February 22nd. No contributions on March 1st. No contributions on March 8th. 4 contributions on March 15th. No contributions on March 22nd. 4 contributions on March 29th. No contributions on April 5th. No contributions on April 12th. No contributions on April 19th. No contributions on April 26th. No contributions on May 3rd. No contributions on May 10th. No contributions on May 17th. No contributions on May 24th. No contributions on May 31st. No contributions on June 7th. No contributions on June 14th. No contributions on June 21st. No contributions on June 28th. No contributions on July 5th. No contributions on July 12th. No contributions on July 19th. No contributions on July 26th. No contributions on August 2nd. No contributions on August 9th. No contributions on August 16th. No contributions on August 23rd. No contributions on August 30th. No contributions on September 6th. No contributions on September 13th. No contributions on September 20th. No contributions on September 27th. No contributions on September 29th. No contributions on October 6th. No contributions on October 13th. No contributions on October 20th. No contributions on October 27th. No contributions on November 3rd. No contributions on November 10th. No contributions on November 17th. No contributions on November 24th. No contributions on December 1st. No contributions on December 8th. No contributions on December 15th. No contributions on December 22nd. No contributions on December 29th. No contributions on January 5th. No contributions on January 12th. No contributions on January 19th. No contributions on January 26th. No contributions on February 2nd. No contributions on February 9th. No contributions on February 16th. No contributions on February 23rd. 1 contribution on March 2nd. No contributions on March 9th. No contributions on March 16th. No contributions on March 23rd. 2 contributions on March 30th. No contributions on April 6th. No contributions on April 13th. No contributions on April 20th. No contributions on April 27th. No contributions on May 4th. No contributions on May 11th. No contributions on May 18th. No contributions on May 25th. No contributions on June 1st. 3 contributions on June 8th. No contributions on June 15th. No contributions on June 22nd. No contributions on June 29th. No contributions on July 6th. No contributions on July 13th. No contributions on July 20th. No contributions on July 27th. No contributions on August 3rd. No contributions on August 10th. No contributions on August 17th. No contributions on August 24th. No contributions on August 31st. No contributions on September 7th. No contributions on September 14th. No contributions on September 21st. 9 contributions on September 28th. No contributions on September 30th. No contributions on October 7th. No contributions on October 14th. No contributions on October 21st. No contributions on October 28th. No contributions on November 4th. No contributions on November 11th. No contributions on November 18th. No contributions on November 25th. No contributions on December 2nd. No contributions on December 9th. No contributions on December 16th. No contributions on December 23rd. No contributions on December 30th. No contributions on January 6th. No contributions on January 13th. No contributions on January 20th. No contributions on January 27th. No contributions on February 3rd. No contributions on February 10th. 4 contributions on February 17th. No contributions on February 24th. No contributions on March 3rd. 2 contributions on March 10th. No contributions on March 17th. No contributions on March 24th. 1 contribution on March 31st. No contributions on April 7th. No contributions on April 14th. No contributions on April 21st. No contributions on April 28th. 1 contribution on May 5th. No contributions on May 12th. No contributions on May 19th. No contributions on May 26th. No contributions on June 2nd. No contributions on June 9th. No contributions on June 16th. No contributions on June 23rd. No contributions on June 30th. No contributions on July 7th. No contributions on July 14th. No contributions on July 21st. No contributions on July 28th. No contributions on August 4th. No contributions on August 11th. No contributions on August 18th. No contributions on August 25th. No contributions on September 1st. No contributions on September 8th. No contributions on September 15th. No contributions on September 22nd. 9 contributions on September 29th. No contributions on October 1st. No contributions on October 8th. No contributions on October 15th. No contributions on October 22nd. No contributions on October 29th. No contributions on November 5th. No contributions on November 12th. No contributions on November 19th. No contributions on November 26th. No contributions on December 3rd. No contributions on December 10th. No contributions on December 17th. No contributions on December 24th. No contributions on December 31st. No contributions on January 7th. No contributions on January 14th. No contributions on January 21st. No contributions on January 28th. No contributions on February 4th. 1 contribution on February 11th. 5 contributions on February 18th. 4 contributions on February 25th. 4 contributions on March 4th. No contributions on March 11th. 2 contributions on March 18th. No contributions on March 25th. No contributions on April 1st. No contributions on April 8th. No contributions on April 15th. No contributions on April 22nd. No contributions on April 29th. No contributions on May 6th. No contributions on May 13th. No contributions on May 20th. No contributions on May 27th. No contributions on June 3rd. No contributions on June 10th. No contributions on June 17th. No contributions on June 24th. No contributions on July 1st. No contributions on July 8th. No contributions on July 15th. No contributions on July 22nd. No contributions on July 29th. No contributions on August 5th. No contributions on August 12th. No contributions on August 19th. No contributions on August 26th. No contributions on September 2nd. No contributions on September 9th. No contributions on September 16th. No contributions on September 23rd. 11 contributions on September 30th. No contributions on October 2nd. No contributions on October 9th. No contributions on October 16th. No contributions on October 23rd. No contributions on October 30th. No contributions on November 6th. No contributions on November 13th. No contributions on November 20th. No contributions on November 27th. No contributions on December 4th. No contributions on December 11th. No contributions on December 18th. No contributions on December 25th. No contributions on January 1st. No contributions on January 8th. No contributions on January 15th. No contributions on January 22nd. No contributions on January 29th. No contributions on February 5th. No contributions on February 12th. 2 contributions on February 19th. 1 contribution on February 26th. 1 contribution on March 5th. No contributions on March 12th. 2 contributions on March 19th. No contributions on March 26th. No contributions on April 2nd. No contributions on April 9th. No contributions on April 16th. No contributions on April 23rd. No contributions on April 30th. No contributions on May 7th. No contributions on May 14th. No contributions on May 21st. No contributions on May 28th. No contributions on June 4th. No contributions on June 11th. No contributions on June 18th. No contributions on June 25th. No contributions on July 2nd. No contributions on July 9th. No contributions on July 16th. No contributions on July 23rd. No contributions on July 30th. No contributions on August 6th. No contributions on August 13th. No contributions on August 20th. No contributions on August 27th. No contributions on September 3rd. No contributions on September 10th. No contributions on September 17th. No contributions on September 24th. No contributions on October 1st. 2 contributions on October 3rd. No contributions on October 10th. No contributions on October 17th. No contributions on October 24th. No contributions on October 31st. No contributions on November 7th. No contributions on November 14th. No contributions on November 21st. No contributions on November 28th. No contributions on December 5th. No contributions on December 12th. No contributions on December 19th. No contributions on December 26th. No contributions on January 2nd. No contributions on January 9th. No contributions on January 16th. No contributions on January 23rd. No contributions on January 30th. No contributions on February 6th. 1 contribution on February 13th. No contributions on February 20th. No contributions on February 27th. No contributions on March 6th. No contributions on March 13th. No contributions on March 20th. 2 contributions on March 27th. No contributions on April 3rd. No contributions on April 10th. No contributions on April 17th. No contributions on April 24th. No contributions on May 1st. No contributions on May 8th. No contributions on May 15th. No contributions on May 22nd. No contributions on May 29th. No contributions on June 5th. No contributions on June 12th. No contributions on June 19th. No contributions on June 26th. No contributions on July 3rd. No contributions on July 10th. No contributions on July 17th. No contributions on July 24th. No contributions on July 31st. No contributions on August 7th. No contributions on August 14th. No contributions on August 21st. No contributions on August 28th. No contributions on September 4th. No contributions on September 11th. No contributions on September 18th. No contributions on September 25th. No contributions on October 2nd. No contributions on October 4th. No contributions on October 11th. No contributions on October 18th. No contributions on October 25th. No contributions on November 1st. No contributions on November 8th. No contributions on November 15th. No contributions on November 22nd. No contributions on November 29th. No contributions on December 6th. No contributions on December 13th. No contributions on December 20th. No contributions on December 27th. No contributions on January 3rd. No contributions on January 10th. No contributions on January 17th. No contributions on January 24th. No contributions on January 31st. No contributions on February 7th. No contributions on February 14th. No contributions on February 21st. No contributions on February 28th. No contributions on March 7th. 8 contributions on March 14th. No contributions on March 21st. 4 contributions on March 28th. No contributions on April 4th. No contributions on April 11th. No contributions on April 18th. No contributions on April 25th. No contributions on May 2nd. No contributions on May 9th. No contributions on May 16th. No contributions on May 23rd. No contributions on May 30th. No contributions on June 6th. No contributions on June 13th. No contributions on June 20th. No contributions on June 27th. No contributions on July 4th. No contributions on July 11th. No contributions on July 18th. No contributions on July 25th. No contributions on August 1st. No contributions on August 8th. No contributions on August 15th. No contributions on August 22nd. No contributions on August 29th. No contributions on September 5th. No contributions on September 12th. No contributions on September 19th. No contributions on September 26th. No contributions on October 3rd. Contribution Graph Day of Week October Oct November Nov December Dec January Jan February Feb March Mar April Apr May May June Jun July Jul August Aug September Sep Sunday Sun Monday Mon Tuesday Tue Wednesday Wed Thursday Thu Friday Fri Saturday Sat Less No contributions. Low contributions. Medium-low contributions. Medium-high contributions. High contributions. More Activity\n              overview Contributed to spekb/SotonHack26 , harryconnor/Customer-Segmentation-Retention-Analysis , harryconnor/Targeted-Promotion-Optimisation and 6 other\n          repositories Loading Contribution activity October 2026 harryconnor has no activity\n          yet for this period. Loading Show more activity\nOverview: https://github.com/harryconnor\n: https://avatars.githubusercontent.com/u/196474833?v=4\n@harryconnorai: https://www.youtube.com/@harryconnorai\nin/harryconnor: https://www.linkedin.com/in/harryconnor/\nOverview: https://github.com/harryconnor\nharryconnor: https://github.com/harryconnor/harryconnor\n: https://github.com/harryconnor#hi-im-harry-\nYouTube: https://www.youtube.com/@harryconnorai\nMachine-Learning-From-Scratch: https://github.com/harryconnor/Machine-Learning-From-Scratch\n43: https://github.com/harryconnor/Machine-Learning-From-Scratch/stargazers\n4: https://github.com/harryconnor/Machine-Learning-From-Scratch/forks\nLife-Expectancy-Analysis: https://github.com/harryconnor/Life-Expectancy-Analysis\n2: https://github.com/harryconnor/Life-Expectancy-Analysis/stargazers\nCustomer-Segmentation-Retention-Analysis: https://github.com/harryconnor/Customer-Segmentation-Retention-Analysis\nPredicting-F1-Pit-Stops: https://github.com/harryconnor/Predicting-F1-Pit-Stops\nTargeted-Promotion-Optimisation: https://github.com/harryconnor/Targeted-Promotion-Optimisation\nNext-Day-Return-Forecasting: https://github.com/harryconnor/Next-Day-Return-Forecasting\nSkip to contributions year list: https://github.com/harryconnor#year-link-2026\nspekb/SotonHack26: https://github.com/spekb/SotonHack26\nharryconnor/Customer-Segmentation-Retention-Analysis: https://github.com/harryconnor/Customer-Segmentation-Retention-Analysis\nharryconnor/Targeted-Promotion-Optimisation: https://github.com/harryconnor/Targeted-Promotion-Optimisation",
+        "observed_at": "2026-10-03T12:29:31.253472Z"
+      }
+    ],
+    "checks": [
+      {
+        "stage": "CHANNEL_DESCRIPTION",
+        "url": "https://www.youtube.com/channel/UC6jg9Jwzo4HKMQ-iunze0VQ",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=AXUZXHIHYCM",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=Okn4QkyTxe4",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=oD8W_xFWo3A",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=Yu_eqv8gATs",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=V33JX4cFls4",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=3giTXZbyf1Q",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=Jj7WD71qQWE",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "WEBSITE",
+        "url": "https://github.com/harryconnor/Machine-Learning-From-Scratch",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "WEBSITE",
+        "url": "https://github.com/harryconnor/Machine-Learning-From-Scratch",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "SELENIUM",
+        "url": "https://github.com/harryconnor/Machine-Learning-From-Scratch",
+        "status": "CHECKED",
+        "reason": "Public page rendered; no login, CAPTCHA solving or form submission."
+      },
+      {
+        "stage": "WEBSITE",
+        "url": "https://github.com/harryconnor",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "WEBSITE",
+        "url": "https://github.com/harryconnor",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "SELENIUM",
+        "url": "https://github.com/harryconnor",
+        "status": "CHECKED",
+        "reason": "Public page rendered; no login, CAPTCHA solving or form submission."
+      }
+    ],
+    "enriched_at": "2026-10-03T12:29:48.810862Z",
+    "data_use_note": "Permission for a derived metric from YouTube API statistics has not been established."
+  },
+  {
+    "enrichment_id": "92532900fe054eacb85390e456266a7d",
+    "filtering_id": "26c545af37794825abbe310874b14651",
+    "collection_run_id": "c67d6cab516a4c3bb7bfc472dddaeac6",
+    "channel_id": "UCAy1PN6jrZXrGFg79WP_91A",
+    "input_fingerprint": "ba6f5828c3551170327ec1e806cad32801f1db14b96c0113ccdd4a1544594718",
+    "base_input_fingerprint": "ba6f5828c3551170327ec1e806cad32801f1db14b96c0113ccdd4a1544594718",
+    "policy_version": "public_contacts_v1",
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "enrichment_v2",
+    "influencer_name": "The Programmers Realm",
+    "platform": "YouTube",
+    "profile_url": "https://www.youtube.com/channel/UCAy1PN6jrZXrGFg79WP_91A",
+    "follower_count": 8170,
+    "engagement_rate_percent": "5.239902080783353733170134639",
+    "engagement_formula": "mean_interactions_per_subscriber_v1",
+    "metrics_observed_at": "2026-10-02T12:49:53.365622Z",
+    "category": "TECHNOLOGY",
+    "content_themes": [
+      {
+        "name": "Python Basics – Core Concepts",
+        "video_ids": [
+          "Fl51EimUvWw",
+          "dWS_wODBcYs",
+          "k_tFDLVjLYc",
+          "D8mJRzIkgNM",
+          "RBEu9GzjL-Q"
+        ]
+      },
+      {
+        "name": "Python Basics – File Operations",
+        "video_ids": [
+          "dXnDPLrGXC0",
+          "LqVkPC8I1b8"
+        ]
+      },
+      {
+        "name": "Python Basics – Date, Time, and Scope",
+        "video_ids": [
+          "uAhGX0g2ZGc",
+          "7fq8WNBp0i4"
+        ]
+      }
+    ],
+    "contact_email": null,
+    "email_status": "NOT_FOUND",
+    "email_display": "Not Found",
+    "email_deliverability": "NOT_VERIFIED",
+    "instagram_urls": [],
+    "website_urls": [],
+    "candidates": [
+      {
+        "kind": "WEBSITE",
+        "value": "https://blog.joeymanani.com/why-catching-all-exceptions-is-a-bad-idea-in-python",
+        "source_id": "video:D8mJRzIkgNM",
+        "role": "UNRELATED",
+        "reason": "Link to an external personal blog about Python; no indication it is the creator's business or contact address."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://docs.python.org/3/py-modindex.html",
+        "source_id": "video:k_tFDLVjLYc",
+        "role": "UNRELATED",
+        "reason": "Link to official Python documentation; clearly a reference resource, not a creator contact."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://tfrs.link/python-scope",
+        "source_id": "video:7fq8WNBp0i4",
+        "role": "UNRELATED",
+        "reason": "Link to a short URL redirecting to a generic resource; no evidence of creator ownership."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://pypi.org/",
+        "source_id": "video:k_tFDLVjLYc",
+        "role": "UNRELATED",
+        "reason": "Link to the Python Package Index, a public repository, not a creator business contact."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://freetouse.com",
+        "source_id": "video:uAhGX0g2ZGc",
+        "role": "UNRELATED",
+        "reason": "Link to a free music site used for background music; unrelated to creator contact."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://freetouse.com/music",
+        "source_id": "video:7fq8WNBp0i4",
+        "role": "UNRELATED",
+        "reason": "Link to a free music page; not a creator business or representative address."
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "channel",
+        "kind": "CHANNEL_DESCRIPTION",
+        "url": "https://www.youtube.com/channel/UCAy1PN6jrZXrGFg79WP_91A",
+        "text": "Welcome to The Programmers Realm! 🚀\n\nDive into the world of coding and technology with me, where we explore the essentials of Python programming, web development, networking and anything computers! Whether you're a beginner taking your first steps or an advanced programmer looking to refine your skills, we've got something for everyone ✨\n\nWhat's your coding goal? Share your thoughts and projects in the comments, and let's build the future together! 🌐💻\n\n#Python #Programming #WebDevelopment #Networking #LearnToCode #TheProgrammersRealm #CodingForBeginners #WebDevelopment #Code #vscode #javascript #networking #network  #webdevelopment #webseries \n\nA \"TFR\" brand.\n",
+        "observed_at": "2026-10-02T12:49:53.365622Z"
+      },
+      {
+        "source_id": "video:k_tFDLVjLYc",
+        "kind": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=k_tFDLVjLYc",
+        "text": "Learn how to import and use modules to add extra functionalities to your code! 🚀\n\nPython Module Index - Builtin (https://docs.python.org/3/py-modindex.html)\nPython Package Index - Community (https://pypi.org/)\n\n\n\nDon't forget to like, subscribe, and leave a comment on what you want to learn next! 🔥\n\nJoin me in the PROGRAMMER'S REALM!\n\n#Python #Programming #PythonTutorial #LearnToCode #CodingForBeginners #TheProgrammersRealm",
+        "observed_at": "2026-10-02T12:55:10.242869Z"
+      },
+      {
+        "source_id": "video:D8mJRzIkgNM",
+        "kind": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=D8mJRzIkgNM",
+        "text": "Avoid program crashes and make your code more reliable with this essential Python skill. Use try-except!\n\n(Yeah, I have a new keyboard - pretty cool, right?)\n\nHate listening and prefer reading? Here's a blog post I made:\nhttps://blog.joeymanani.com/why-catching-all-exceptions-is-a-bad-idea-in-python\n\n\n\nDon't forget to like, subscribe, and leave a comment on what you want to learn next! 🔥\n\nJoin me in the PROGRAMMER'S REALM!\n\n🎵 Onoychenkomusic - Bossa Jazz Summer\n\n\n#Python #Programming #PythonTutorial #LearnToCode #CodingForBeginners #TheProgrammersRealm",
+        "observed_at": "2026-10-02T12:55:10.242869Z"
+      },
+      {
+        "source_id": "video:uAhGX0g2ZGc",
+        "kind": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=uAhGX0g2ZGc",
+        "text": "Learn how to handle date and time data with ease. I'll teach you how to get the current date, the current time, a previous/future timestamp as well as formatting a timestamp for human readability 🚀\n\nCount how many times (pun not intended) I say \"date\" and \"time\" in this video, leave a comment. I realized how silly my script sounds now that I've actually made the video - there's no better substitute for the words though.\n\nWhoops, forgot to leave a comment at the top of the code which says what video this is, maybe the module import makes it obvious enough 🥲\n\n\n\nDon't forget to like, subscribe, and leave a comment on what you want to learn next! 🔥\n\nJoin me in the PROGRAMMER'S REALM!\n\n🎵 \"Sunset\" by Lukrembo (https://freetouse.com)\n\n#Python #Programming #PythonTutorial #LearnToCode #CodingForBeginners #TheProgrammersRealm",
+        "observed_at": "2026-10-02T12:55:10.242869Z"
+      },
+      {
+        "source_id": "video:7fq8WNBp0i4",
+        "kind": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=7fq8WNBp0i4",
+        "text": "Learn how global and local variables work and how to manage scope in your programs - it's quite important this one.\n\nAdditional Information: https://tfrs.link/python-scope\n\n\n\nDon't forget to like, subscribe, and leave a comment on what you want to learn next! 🔥\n\nJoin me in the PROGRAMMER'S REALM!\n\n🎵 \"Daily\" by Lukrembo (https://freetouse.com/music)\n\n#Python #Programming #PythonTutorial #LearnToCode #CodingForBeginners #TheProgrammersRealm",
+        "observed_at": "2026-10-02T12:55:10.242869Z"
+      }
+    ],
+    "checks": [
+      {
+        "stage": "CHANNEL_DESCRIPTION",
+        "url": "https://www.youtube.com/channel/UCAy1PN6jrZXrGFg79WP_91A",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=k_tFDLVjLYc",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=D8mJRzIkgNM",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=uAhGX0g2ZGc",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=7fq8WNBp0i4",
+        "status": "CHECKED",
+        "reason": "Source and literal candidates saved before judgment."
+      }
+    ],
+    "enriched_at": "2026-10-03T12:31:23.491881Z",
+    "data_use_note": "Permission for a derived metric from YouTube API statistics has not been established."
+  },
+  {
+    "enrichment_id": "b13ad51941f349da812bc71125e92403",
+    "filtering_id": "6eccd2f02d904fcb89da934aef1eec5a",
+    "collection_run_id": "c67d6cab516a4c3bb7bfc472dddaeac6",
+    "channel_id": "UCELP0HmSqys72YV9T6VyUDg",
+    "input_fingerprint": "460e13c404b33b8d32cbf2d10213c27cfd44138e4e55cf2988c4f7b2f6d8c11c",
+    "base_input_fingerprint": "460e13c404b33b8d32cbf2d10213c27cfd44138e4e55cf2988c4f7b2f6d8c11c",
+    "policy_version": "public_contacts_v1",
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "enrichment_v1",
+    "influencer_name": "pyninja",
+    "platform": "YouTube",
+    "profile_url": "https://www.youtube.com/channel/UCELP0HmSqys72YV9T6VyUDg",
+    "follower_count": 6840,
+    "engagement_rate_percent": "5.821637426900584795321637427",
+    "engagement_formula": "mean_interactions_per_subscriber_v1",
+    "metrics_observed_at": "2026-10-02T12:49:59.787962Z",
+    "category": "TECHNOLOGY",
+    "content_themes": [
+      {
+        "name": "Fundamentals of Machine Learning",
+        "video_ids": [
+          "BxdkS1MKiBQ",
+          "dKqwnCKrpVI",
+          "d1tVOcZwM3s"
+        ]
+      },
+      {
+        "name": "Gradient Descent Variants",
+        "video_ids": [
+          "B13_noZP_O8",
+          "PDOVKZZ3_qU"
+        ]
+      },
+      {
+        "name": "Model Evaluation and Validation",
+        "video_ids": [
+          "84uQXprM8aY"
+        ]
+      },
+      {
+        "name": "Regression Techniques",
+        "video_ids": [
+          "lkGyu70gAzE",
+          "HXahn-XGn2Q",
+          "ftMDHK0Hc5A"
+        ]
+      },
+      {
+        "name": "Data Visualization and Portfolio Analysis",
+        "video_ids": [
+          "gazErl3oDrs"
+        ]
+      }
+    ],
+    "contact_email": "pyninja.official@gmail.com",
+    "email_status": "FOUND",
+    "email_display": "pyninja.official@gmail.com",
+    "email_deliverability": "NOT_VERIFIED",
+    "instagram_urls": [],
+    "website_urls": [
+      "https://pyninja.io/",
+      "https://youtube.com/@pyninja"
+    ],
+    "candidates": [
+      {
+        "kind": "EMAIL",
+        "value": "pyninja.official@gmail.com",
+        "source_id": "video:BxdkS1MKiBQ",
+        "role": "CREATOR_BUSINESS",
+        "reason": "Explicit contact email for the creator to be reached for business or collaboration."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://pyninja.io/",
+        "source_id": "video:BxdkS1MKiBQ",
+        "role": "CREATOR_PROFILE",
+        "reason": "Creator's platform URL referenced in the description."
+      },
+      {
+        "kind": "WEBSITE",
+        "value": "https://youtube.com/@pyninja",
+        "source_id": "video:BxdkS1MKiBQ",
+        "role": "CREATOR_PROFILE",
+        "reason": "Link to the creator's YouTube channel."
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "channel",
+        "kind": "CHANNEL_DESCRIPTION",
+        "url": "https://www.youtube.com/channel/UCELP0HmSqys72YV9T6VyUDg",
+        "text": "Aprende Machine Learning con Python. Nuevo video cada semana.\n\nCreado por Javier Ontiveros.\n",
+        "observed_at": "2026-10-02T12:49:59.787962Z"
+      },
+      {
+        "source_id": "video:BxdkS1MKiBQ",
+        "kind": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=BxdkS1MKiBQ",
+        "text": "Entra a pyninja.pro y comienza a aprender Machine Learning hoy mismo.\n\nEn este video, explicaremos en detalle cómo funciona la ecuación normal y cómo utilizar la librería Scikit-Learn para entrenar un modelo de regresión lineal simple.\n\n#inteligenciaartificial #machinelearning #ecuacion #normal #scikit #learn\n\nMás videos:\nGradiente descendente mini-batch | Machine Learning 101 \nhttps://www.youtube.com/watch?v=B13_noZP_O8&t=1s \nGradiente descendente estocástico | Machine Learning 101 https://www.youtube.com/watch?v=PDOVKZZ3_qU \nFunción de coste: Error Cuadrático Medio | Machine Learning 101 https://www.youtube.com/watch?v=lkGyu70gAzE&t=22s\n\nTemas del video:\n- Inteligencia artificial\n- Machine learning\n- Ecuación normal\n- Scikit-learn\n- Regresión lineal simple\n\nSígueme en:\nTwitter: https://twitter.com/pyninja_\n\nContacto:\npyninja.official@gmail.com\nAcerca de pyninja:\npyninja es una plataforma (https://pyninja.io/) y un canal de YouTube (https://youtube.com/@pyninja) especializado en la producción de contenido educativo sobre Machine Learning con Python. Nos enfocamos en proporcionar recursos en español mediante video tutoriales y cursos para facilitar el aprendizaje.\n\nCapítulos:\n00:00 - Intro\n00:39 - Regresión lineal simple con la ecuación normal\n02:00 - Regresión lineal simple con scikit-learn\n03:20 - Complejidad temporal de la ecuación normal\n04:54 - Complejidad temporal de scikit-learn\n06:11 - Implementación en Python\n13:27 - Outro",
+        "observed_at": "2026-10-02T12:55:19.667412Z"
+      }
+    ],
+    "checks": [
+      {
+        "stage": "CHANNEL_DESCRIPTION",
+        "url": "https://www.youtube.com/channel/UCELP0HmSqys72YV9T6VyUDg",
+        "status": "CHECKED",
+        "reason": "Supplied source extracted and validated."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=BxdkS1MKiBQ",
+        "status": "BLOCKED",
+        "reason": "Rejected WEBSITE from source video:BxdkS1MKiBQ: returned value is not present in the supplied text."
+      },
+      {
+        "stage": "VIDEO_DESCRIPTION",
+        "url": "https://www.youtube.com/watch?v=BxdkS1MKiBQ",
+        "status": "CHECKED",
+        "reason": "Supplied source extracted and validated."
+      }
+    ],
+    "enriched_at": "2026-10-03T09:16:36.524526Z",
+    "data_use_note": "Permission for a derived metric from YouTube API statistics has not been established."
+  }
+]
