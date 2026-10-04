@@ -47,12 +47,7 @@ You do not need to activate the virtual environment because the commands use its
 
 ### API keys and local configuration
 
-Create a private local settings file once:
-
-```powershell
-Copy-Item .env.example .env
-notepad .env
-```
+Create a `.env` file in the project folder. Copy the contents of `.env.example` into it, then replace the API key placeholders with your own keys.
 
 Supply these values privately:
 
@@ -71,7 +66,7 @@ GEMINI_API_KEY=your_gemini_key
 
 Supported settings in `.env.example` retain these defaults:
 
-```dotenv
+```ini
 DISCOVERY_TARGET=50
 RECENT_VIDEO_LIMIT=10
 MIN_SUBSCRIBERS=5000
@@ -82,17 +77,14 @@ REQUEST_TIMEOUT_SECONDS=30
 DATABASE_PATH=data/outreach.db
 ```
 
-`YOUTUBE_SEARCH_QUERIES` optionally overrides the twelve Python-related queries as a pipe-separated list. The existing query/size/request overrides are supported; the documented campaign test uses the defaults above. Downstream classification/filtering require complete ten-video samples; a smaller collection setting does not relax that requirement. Subscriber settings configure discovery/collection; deterministic campaign filtering retains its saved rule defaults of 5,000–100,000.
-
-All stages use the same SQLite path. Blank/unset `DATABASE_PATH` uses project `data/outreach.db`; relative environment paths resolve against the project root. Review, simulation, Gmail and export also support explicit `--database`, which overrides that default. Relative explicit CLI paths resolve from the working directory.
-
-Validate local YouTube settings:
+Save the file, then check the local configuration:
 
 ```powershell
 .\.venv\Scripts\python.exe config.py
 ```
 
-This checks local configuration and hides the key in its summary; it does not test provider access or validate Groq/Gemini keys. Configured models are `openai/gpt-oss-120b` for Groq and `gemini-3.8-flash` for Gemini. Explicit alternatives supported by the CLIs are `openai/gpt-oss-20b` and `gemini-3.5-flash`, respectively. These are source settings and observed run identifiers, not a guarantee of future model availability, account access, pricing or quota. There is no automatic provider/model fallback.
+This checks your local YouTube settings without displaying the API key. It does not make an API request or check the Groq and Gemini keys.
+**Models used:** Groq uses `openai/gpt-oss-120b` for classification and enrichment. Gemini uses `gemini-3.8-flash` for message personalization.
 
 ## Architecture and filtering
 
