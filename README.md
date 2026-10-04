@@ -92,38 +92,22 @@ This checks your local YouTube settings without displaying the API key. It does 
 
 ![CodeStart outreach project architecture](assets/architecture.png)
 
-flowchart TD
-    A[YouTube discovery] --> B[Video collection and named cohort]
-    B --> C[Groq description niche and title relevance]
-    C --> D[Deterministic Python filtering]
-    D --> E[PASS profiles: public contact enrichment]
-    E --> F[Gemini profile-theme email and DM drafts]
-    F --> G[Separate human email and DM review]
-    G --> H[Simulation only]
-    G --> I[Optional explicit Gmail test]
-    H --> J[Read-only exports and separate trackers]
-    I --> J
-    K[(One local SQLite database)] --- B
-    K --- D
-    K --- E
-    K --- F
-    K --- G
-    K --- J
+The main workflow runs step by step. Each file has a specific role:
 
-Modules are executed sequentially, not by an automatic orchestrator:
-
-- `config.py`: shared local environment/database helpers and YouTube settings.
-- `schemas.py` / `database.py`: validated records, linked samples, transactions, versioned history and compatible legacy readers.
-- `discovery.py`: YouTube-only search, deduplication and inclusive subscriber eligibility. Missing/hidden counts stay unknown. The default target is 50 size-eligible creators, not 50 final PASS creators.
-- `collection.py`: latest ten public, already-published non-live uploads per creator; normal uploads and Shorts share selection. Exclusions and uncertain/partial statuses are stored with the ordered source IDs. Stats and descriptions are fetched here. Selection uses saved eligible creators in channel-ID order and does not refresh subscriber counts.
-- `classification.py`: Groq niche judgment from channel description only, and relevance from the ten titles only. Video descriptions are not classification input.
-- `filtering.py`: calculation from saved records; no network calls.
-- `enrichment.py`: current saved PASS profiles only; literal candidates, evidence and deduplicated occurrences are persisted before batched Groq ownership judgments. Uses channel descriptions and saved video-description contact evidence, known public sources and creator-linked websites, with bounded optional browser rendering and already-discovered Instagram routes.
-- `personalization.py`: creator name, niche, profile themes and campaign facts only; no video-title/description text is sent for drafting. Produces both drafts even when contacts are missing.
-- `review.py`: separate human email/DM decisions, reviewer/time/rejection reason, bound to exact saved text and recipients.
-- `sending.py` / `gmail_demo.py`: independent simulation and Gmail-test layers, with separate persistent logs.
-- `export_results.py`: one read-only database snapshot, full cohort dataset, exact saved messages and separate trackers.
-- `tests/verify_offline.py`: existing self-checks plus focused configuration, import-boundary and reservation checks.
+- **`config.py`** loads local settings, API keys, and the database path.
+- **`schemas.py`** checks that records follow the required format.
+- **`database.py`** stores records and their history, links related data, and supports older saved records.
+- **`discovery.py`** searches YouTube, removes duplicate channels, and checks subscriber counts. It aims to find 50 creators within the subscriber range. These creators still need to pass the later filters.
+- **`collection.py`** collects each creator’s ten most recent public videos, including Shorts. It saves titles, descriptions, statistics, and any collection issues. Live and upcoming videos are excluded. Subscriber counts are taken from saved data.
+- **`classification.py`** uses Groq to identify the niche from the channel description and check Python relevance from the ten video titles. It does not use video descriptions.
+- **`filtering.py`** applies the campaign rules to saved data and calculates engagement rates. It makes no API calls.
+- **`enrichment.py`** processes creators who passed filtering. It checks channel and saved video descriptions, then follows relevant public links to find contact details. Python removes duplicate candidates and saves their sources before Groq checks whether they belong to the creator. Selenium is optional.
+- **`personalization.py`** uses the creator’s name, niche, content themes, and campaign details to generate an email and Instagram DM. It does not use individual video titles or descriptions. Both drafts are created even when contact details are missing.
+- **`review.py`** records human approval or rejection separately for emails and DMs. It saves the reviewer, review time, and rejection reason. Approval applies to the exact saved message and recipient.
+- **`sending.py`** simulates sending and records the result. It prevents duplicate simulations.
+- **`gmail_demo.py`** separately sends an optional real test email to an address entered by the user. It keeps its own sending log and prevents duplicate test sends.
+- **`export_results.py`** reads the database and exports the full creator dataset, saved messages, and separate outreach trackers. It does not change the database.
+- **`tests/verify_offline.py`** runs offline checks for the workflow, settings, and duplicate prevention without making real API calls or sending messages.
 
 Filtering policy:
 
