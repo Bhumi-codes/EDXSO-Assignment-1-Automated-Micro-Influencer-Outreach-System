@@ -1,10 +1,27 @@
 # EDXSO Automated Micro-Influencer Outreach
 
-A Python prototype for discovering YouTube micro-influencers, qualifying them for a fictional beginner Python course campaign, collecting source-backed public contact information, and generating collaboration drafts for human review.
+The assignment is to build an automated system that finds suitable micro-influencers, checks them against campaign rules, collects their contact details and profile information, creates personalized messages, and shows how sending and tracking work. The final submission must include a working system, at least fifty influencer records, and clear documentation.
 
-The objective is to demonstrate a complete, traceable outreach workflow for a 50-creator test cohort. The solution combines YouTube Data API collection, Groq classification and contact-context judgments, deterministic Python filtering, Gemini personalization, SQLite persistence, human approval, and simulated delivery. An independent Gmail demo supports an explicitly opted-in test to a caller-supplied address.
+## Proposed solution
 
-The campaign uses **CodeStart**, a fictional personalized beginner Python course with personalized coding tests and Python learning paths for DSA and AI/ML. The proposal is an affiliate collaboration: a brief course mention in an upcoming YouTube upload, with a course link and creator-specific coupon code in its description. Commission and format remain open for discussion. No actual product URL, coupon, price or commission percentage is invented. **Alex, Partnerships Coordinator at CodeStart** is the demonstration signature.
+This Python project finds YouTube micro-influencers for a fictional beginner Python course campaign. It collects publicly available contact information, records where it was found, and creates personalized collaboration messages.
+
+The project follows this flow for a test group of 50 creators:
+
+- **YouTube Data API** collects channel details and recent videos.
+- **Groq** identifies the channel’s niche, checks content relevance, and helps identify creator contacts.
+- **Python** applies the filtering rules and calculates engagement rates.
+- **SQLite** stores the collected data, results, messages, and outreach logs.
+- **Gemini** creates personalized email and Instagram DM drafts.
+- **Human review** approves messages before they move to the sending stage.
+- **Simulated sending** demonstrates delivery and tracking without sending real messages.
+- A separate **Gmail demo** can send a real test email to an address entered by the user.
+
+The campaign promotes **CodeStart**, a fictional personalized beginner Python course. It includes personalized coding tests and Python learning paths for data structures and algorithms (DSA) and artificial intelligence and machine learning (AI/ML).
+
+The proposed collaboration is an **affiliate partnership**. Creators would briefly mention CodeStart in an upcoming YouTube video and add a course link and their own coupon code to the video description. They would earn an agreed commission on purchases made through their code. The promotion format and commission would be discussed with each creator.
+
+The demo messages use the signature **Alex, Partnerships Coordinator at CodeStart**.
 
 ## Setup and requirements
 
