@@ -88,6 +88,10 @@ This checks your local YouTube settings without displaying the API key. It does 
 
 ## Architecture and filtering
 
+## Project architecture
+
+![CodeStart outreach project architecture](assets/architecture.png)
+
 flowchart TD
     A[YouTube discovery] --> B[Video collection and named cohort]
     B --> C[Groq description niche and title relevance]
