@@ -1,4 +1,4 @@
-# EDXSO Automated Micro-Influencer Outreach
+# EDXSO Automated Micro-Influencer Outreach - Assignment 1
 
 The assignment is to build an automated system that finds suitable micro-influencers, checks them against campaign rules, collects their contact details and profile information, creates personalized messages, and shows how sending and tracking work. The final submission must include a working system, at least fifty influencer records, and clear documentation.
 
