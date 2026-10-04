@@ -12,7 +12,7 @@ The project follows this flow for a test group of 50 creators:
 - **Groq** identifies the channel’s niche, checks content relevance, and helps identify creator contacts.
 - **Python** applies the filtering rules and calculates engagement rates.
 - **SQLite** stores the collected data, results, messages, and outreach logs.
-- **Gemini** creates personalized email and Instagram DM drafts.
+- **Gemini API** creates personalized email and Instagram DM drafts.
 - **Human review** approves messages before they move to the sending stage.
 - **Simulated sending** demonstrates delivery and tracking without sending real messages.
 - A separate **Gmail demo** can send a real test email to an address entered by the user.
