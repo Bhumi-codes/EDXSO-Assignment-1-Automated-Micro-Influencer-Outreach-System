@@ -155,7 +155,7 @@ For a new installation, initialize the database:
 Collection prints a **new collection run ID**. Copy that ID and enter it here:
 
 ```powershell
-$runId = Read-Host "Paste the collection run ID"
+$runId = "Paste the collection run ID"
 ```
 
 - **Same run ID:** Use this ID for every remaining step.
